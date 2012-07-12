@@ -1,0 +1,200 @@
+#global-header {
+	color: #333;
+	padding: 0.5em 0;
+	margin-bottom: 20px;
+}
+
+#global-search {
+	float: right;
+	margin: 0.5em 0 0 0;
+}
+
+#category-menu {
+background-color: #eee;
+margin-top: : 3px;
+	ul {
+		list-style: none;
+
+		li {
+			display: inline-block;
+			margin: 0 20px;
+			font-size: 14px;
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+		}
+		i {
+		margin-right: 2px;
+		margin-top: 1px;
+			}
+	}
+}
+
+#main-logo {
+	float: left;
+	margin: 0.23em 0 0 0;
+	padding: 0;
+	line-height: 1;
+	display: inline-block;
+	color: #333;
+	font-size: 4em;
+}
+
+#main-menu {
+	float: left;
+	margin-left: 4em;
+	margin-top: 38px;
+	ul {
+		line-height: 1;
+		padding: 0;
+		margin: 0;
+
+		li {
+			list-style-type: none;
+			display: inline-block;
+			margin: 0;
+		}
+	}
+
+	a {
+		line-height: 1;
+		float: left;
+		color: inherit;
+		padding: 1em 20px;
+	}
+}
+
+#secondary-column {
+	h1 {
+		font-size: 20px;
+	}
+}
+
+/*Link discoloration*/
+	a {
+		text-decoration: none;
+		color: #000;
+	}
+	a:link {
+		color:#000;
+		text-decoration: none;
+		}      /* unvisited link */
+	a:visited {
+		color:#000;
+		text-decoration: none;
+		}  /* visited link */
+	a:hover {
+		color:#000;
+		text-decoration: none;
+		}  /* mouse over link */
+	a:active {
+		color:#000;
+		text-decoration: none;
+	}
+/*Link discoloration*/
+
+.author{
+	display: inline;
+	font-size: 12pt;
+	border-top: 1px solid #eee;
+	max-height: 50px;
+}
+
+
+.print {
+	margin-bottom: 20px;
+	.quoteright {
+		float:right;
+		max-width: 200px;
+		max-height: 300px;
+		margin: 6px;
+		font-size: 1.5em;
+	}
+	.quoteacross {
+
+		font-size:1.5em;
+		text-align: center;
+	}
+}
+
+.reportasje {
+	font-family:"Merriweather:400,700,900,300";
+	margin: 0 100px 0 50px;
+	font-size:1.5em;
+	.quoteacross {
+		font-size:1.5em;
+		text-align: center;
+	}
+}
+
+.repmainimage {
+	margin-right: 100px;
+	margin-left: 50px;
+}
+
+.ad-h-bar {
+	background: #eee;
+	min-height: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
+	&:after {
+		content: "Ad space";
+		color: black;
+		font-size: 70%;
+		display: block;
+		margin: 30px;
+	}
+}
+
+.ad-v-bar {
+	float:right;
+	background: #eee;
+	min-height: 400px;
+	max-width: 200px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-right: 2em;
+	margin-left: 2em;
+}
+
+
+// Utilities
+.v-margin {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+
+#multimediarow {
+	background-color: gray;
+}
+
+.footer{
+	background-color: #eee;
+	padding:2em;
+	#contact {
+		text-align: right;
+		margin-right:01em;
+			i {
+			margin-right: 5px;
+			margin-top: 2px;
+			}
+	}
+}
+
+
+
+// Landscape phones and down
+@media (max-width: 480px) { }
+
+// Landscape phone to portrait tablet
+@media (max-width: 768px) { 
+}
+
+// Portrait tablet to landscape and desktop
+@media (min-width: 768px) and (max-width: 980px) { }
+
+// Large desktop
+@media (min-width: 1200px) { }
