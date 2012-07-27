@@ -1,7 +1,6 @@
 //Color Pallette based on Under Dusken's own layout documentation. 
 //Green is based off complimentary color chart off Red.
 //Colors can also be used at 50% and 20%, in accordance with the graphic profile.
-//Dette er en test
 @blue: #00abd7;
 @purple: #841764;
 @red: #841764;
@@ -12,6 +11,9 @@
 	color: #333;
 	padding: 0.5em 0;
 	margin-bottom: 20px;
+	#global-search{
+		margin-top: 48px
+	}
 }
 
 #global-search {
@@ -81,7 +83,7 @@ margin-top: : 3px;
 	}
 }
 
-/*Link discoloration*/
+//Link discoloration
 	a {
 		text-decoration: none;
 		color: #000;
@@ -103,7 +105,7 @@ margin-top: : 3px;
 		text-decoration: none;
 	}
 
-/*Link discoloration*/
+//This is a class styling the byline of an article.
 .author{
 	display: inline;
 	font-size: 12pt;
@@ -133,17 +135,15 @@ margin-top: : 3px;
 //for font because of Sans-fonts ease on the eyes with longer texts.
 .reportasje {
 	font-family:"Merriweather:400,700,900,300";
-	margin: 0 100px 0 50px;
-	font-size:1.5em;
+    font-size:1.2em;
+    line-height:150%;
 	.quoteacross {
 		font-size:1.5em;
-		text-align: center;
-	}
+		text-align: center;}
 }
 
 .repmainimage {
-	margin-right: 100px;
-	margin-left: 50px;
+
 }
 
 //Adspace on the Main Page going horizontaly across the content listing.
@@ -182,7 +182,7 @@ margin-top: : 3px;
 
 //A sectional crossbar on the Main Page promoting STV video
 #multimediarow {
-	background-color: gray;
+	margin-top: 10px ;
 }
 
 .footer{
@@ -198,14 +198,28 @@ margin-top: : 3px;
 	}
 }
 
+.article img{
+	border: black solid 1px;
+}
+
+#artleft{
+	text-align: left;
+}
+
+#artright{
+	text-align: right;
+}
+
+#artcenter{
+	text-align: center;
+}
 
 
 // Landscape phones and down
 @media (max-width: 480px) { }
 
 // Landscape phone to portrait tablet
-@media (max-width: 768px) { 
-}
+@media (max-width: 768px) { }
 
 // Portrait tablet to landscape and desktop
 @media (min-width: 768px) and (max-width: 980px) { }
