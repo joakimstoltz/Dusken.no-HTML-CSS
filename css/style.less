@@ -194,7 +194,6 @@ margin-top: : 3px;
 	padding:2em;
 	#contact {
 		text-align: right;
-		margin-right:01em;
 			i {
 			margin-right: 5px;
 			margin-top: 2px;
@@ -218,12 +217,18 @@ margin-top: : 3px;
 	text-align: center;
 }
 
-
 // Landscape phones and down
 @media (max-width: 480px) { }
 
 // Landscape phone to portrait tablet
-@media (max-width: 768px) { }
+@media (max-width: 768px) { 
+
+.fullwidth {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+}
 
 // Portrait tablet to landscape and desktop
 @media (min-width: 768px) and (max-width: 980px) { }
