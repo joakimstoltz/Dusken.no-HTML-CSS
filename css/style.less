@@ -125,22 +125,31 @@ margin-top: : 3px;
 		margin: 6px;
 		font-size: 1.5em;
 	}
-	.quoteacross {
+}
 
-		font-size:1.5em;
-		text-align: center;
+.quoteacross {
+	font-family: ProximaNovaRgBold;
+	font-size:1.5em;
+	text-align: center;
+	//margin-top: 1em;
+	//margin-bottom: 1em;
+
+	&:before {
+		content: "“";
+	}
+
+	&:after {
+		content:"”"
 	}
 }
 
 //Style for articles in "reportasje"-category, uses Merriweather 
 //for font because of Sans-fonts ease on the eyes with longer texts.
 .reportasje {
-	font-family:"Merriweather:400,700,900,300";
+	//font-family:"Merriweather:400,700,900,300";
     font-size:1.2em;
     line-height:150%;
-	.quoteacross {
-		font-size:1.5em;
-		text-align: center;}
+
 	h2{
 		margin-top: 2em;
 	}
