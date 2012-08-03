@@ -2,8 +2,10 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>Dusken.no</title>
+	<title>Dusken.no - Artikkel</title>
+	
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap-responsive.css">
 	<link rel="stylesheet/less" href="css/style.less">
 	<link rel="stylesheet/less" href="css/font.less">
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700,900,300' rel='stylesheet' type='text/css'>
@@ -50,18 +52,18 @@
 			<div class="span8">
 				<img src="/images/articleimage/600400.jpeg" alt="Article image">
 				<h1 >Den store ville vesten-festen</h1>
+
+				<section class="byline">
+					<p class="authorname">av <a href="#">Ola Normann</a></p>
+					<p class="published">Publisert 21. Januar 2012, 14:40</p> 
+					<p class="edited">Redigert 22. Januar 2012, 20:13</p>
+				</section>
 			</div>
 
 			<div class="span8">
-				<section class="author">
-					<p class="authorname">Ola Normann</p>
-					<p class="published">Publisert 21. Januar 2012</p> 
-					<p class="edited">Redigert 22. Januar 2012, 20:13</p>
-				</section>
+				
 				<section class="article print">
 					<p><em>Aenean nec lacus vel diam elementum porttitor eget vitae tellus. In hac habitasse platea dictumst. Nullam lectus ante, ullamcorper in fringilla non, accumsan et nisl. Maecenas vel malesuada risus. In hac habitasse platea dictumst.</em></p>
-
-					<p class="quoteright">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 
 					<p>Praesent odio sapien, lobortis non pellentesque mollis, tincidunt at dolor. Cras aliquet risus sed sem lacinia in placerat dolor viverra. In semper porta libero at luctus. Praesent semper quam ac purus tristique ultricies. In tincidunt velit ut augue auctor tincidunt. Cras suscipit arcu auctor enim pulvinar ac sodales nibh auctor. In nunc urna, varius id porta id, convallis id nunc. Fusce posuere, dolor ac vestibulum aliquet, odio enim tempor massa, eget pulvinar turpis diam non magna. Maecenas imperdiet leo vel augue aliquam ornare.</p>
 
@@ -75,18 +77,16 @@
 				</section>
 			</div>
 
-				<div class="row">
-					<div class="span4 ad-v-bar"></div>
-				</div>
+			<div class="span4 ad-v-bar"></div>
 		</div>
 	
 
 		<div class="row">
-			<div class="span6">
+			<div class="span6 comment-section">
 				<section class="article">
 					<h3>Kommentarer: AV/PÅ</h3>
 					<p><a class="btn btn-large btn-primary" href="#">
-  <i class="icon-comment"></i>Kommenter</a></p>
+					<i class="icon-comment"></i>Kommenter</a></p>
 				</section>
 
 				<section class="article">
@@ -132,11 +132,13 @@
 	</div>
 
 	<footer>
-		<div class="footer">
-			<div id="contact">
-			<p><i class="icon-user"></i>Ansvarlig Redaktør: Eivind Digranes</p>
-			<p><i class="icon-envelope"></i> <a href="mailto:redaktor@dusken.no">redaktor@dusken.no</a></p>
-			<p><i class="icon-phone"></i> +4799939393</p>
+		<div class="row">
+			<div class="footer span12">
+				<div id="contact">
+					<p><i class="icon-user"></i>Ansvarlig Redaktør: Eivind Digranes</p>
+					<p><i class="icon-envelope"></i> <a href="mailto:redaktor@dusken.no">redaktor@dusken.no</a></p>
+					<p><i class="icon-phone"></i> +4799939393</p>
+				</div>
 			</div>
 		</div>
 	</footer>

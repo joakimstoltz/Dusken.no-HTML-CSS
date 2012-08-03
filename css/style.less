@@ -13,19 +13,30 @@
 	color: #333;
 	padding: 0.5em 0;
 	margin-bottom: 20px;
+
 	#global-search{
-		margin-top: 48px
+		width: 100%;
+		box-sizing: border-box;
+		padding: 1em 0.5em;
+		margin-top: 38px;
 	}
 }
 
-#global-search {
-	float: right;
-	margin: 0.5em 0 0 0;
+#main-logo {
+	float: left;
+	margin: 0.55em 0 0 0;
+	padding: 0;
+	line-height: 1;
+	display: inline-block;
+	width: 100%;
+	color: #333;
+	font-size: 5vw;
 }
 
 #category-menu {
-background-color: #eee;
-margin-top: : 3px;
+	background-color: #eee;
+	margin-top: : 3px;
+
 	ul {
 		list-style: none;
 
@@ -38,27 +49,21 @@ margin-top: : 3px;
 				margin-left: 0;
 			}
 		}
+
 		i {
-		margin-right: 2px;
-		margin-top: 1px;
-			}
+			margin-right: 2px;
+			margin-top: 1px;
+		}
 	}
 }
 
-#main-logo {
-	float: left;
-	margin: 0.23em 0 0 0;
-	padding: 0;
-	line-height: 1;
-	display: inline-block;
-	color: #333;
-	font-size: 4em;
-}
+
 
 #main-menu {
 	float: left;
-	margin-left: 4em;
+	//margin-left: 4em;
 	margin-top: 38px;
+
 	ul {
 		line-height: 1;
 		padding: 0;
@@ -86,33 +91,39 @@ margin-top: : 3px;
 }
 
 //Link discoloration
-	a {
-		text-decoration: none;
-		color: #000;
-	}
-	a:link {
-		color:#000;
-		text-decoration: none;
-		}      /* unvisited link */
-	a:visited {
-		color:#000;
-		text-decoration: none;
-		}  /* visited link */
-	a:hover {
-		color:#000;
-		text-decoration: none;
-		}  /* mouse over link */
-	a:active {
-		color:#000;
-		text-decoration: none;
-	}
+a {
+	text-decoration: none;
+	color: #333;
+}
+a:link {
+	color:#333;
+	text-decoration: none;
+	}      /* unvisited link */
+a:visited {
+	color:#333d;
+	text-decoration: none;
+	}  /* visited link */
+a:hover {
+	color:#333;
+	text-decoration: none;
+	}  /* mouse over link */
+a:active {
+	color:#333;
+	text-decoration: none;
+}
+
 
 //This is a class styling the byline of an article.
-.author{
-	display: inline;
+.byline{
 	font-size: 12pt;
 	border-top: 1px solid #eee;
-	max-height: 50px;
+	padding-top: 10px;
+	margin-bottom: 40px;
+
+	p {
+		float: left;
+		font-size: 14px;
+	}
 }
 
 //Style for normal articles published on the site with a larger margin to fill 
@@ -127,12 +138,31 @@ margin-top: : 3px;
 		margin: 6px;
 		font-size: 1.5em;
 	}
-	&:before {
-		content: "“";
-	}
 
-	&:after {
-		content:"”"
+	
+}
+
+p {
+	a {
+		text-decoration: none;
+		color: red;
+	}
+	a:link {
+		color:red;
+		text-decoration: none;
+		}      /* unvisited link */
+	a:visited {
+		color:red;
+		text-decoration: none;
+		}  /* visited link */
+	a:hover {
+		color:red;
+		text-decoration: underline;
+		background-color: rgba(255, 0,0,.05);
+		}  /* mouse over link */
+	a:active {
+		color:red;
+		text-decoration: none;
 	}
 }
 
@@ -140,8 +170,8 @@ margin-top: : 3px;
 	font-family: ProximaNovaRgBold;
 	font-size:1.5em;
 	text-align: center;
-	//margin-top: 1em;
-	//margin-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 
 	&:before {
 		content: "“";
@@ -182,14 +212,8 @@ margin-top: : 3px;
 
 //Adspace in normal articles placed on the right hand side of the content.
 .ad-v-bar {
-	float:right;
 	background: #eee;
 	min-height: 800px;
-	max-width: 250px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	margin-right: 2em;
-	margin-left: 2em;
 }
 
 // Utilities
@@ -219,7 +243,7 @@ margin-top: : 3px;
 
 //Selector for images on the front page navigation as well as in articles
 .article img{
-
+	width: 100%;
 }
 
 .artblock{
@@ -241,10 +265,26 @@ margin-top: : 3px;
 	margin-right: -20px;
 }
 
+#global-header{
+	#main-logo {
+		font-size: 30px;
+	}
+
+}
+
 }
 
 // Portrait tablet to landscape and desktop
-@media (min-width: 768px) and (max-width: 980px) { }
+@media (min-width: 768px) and (max-width: 980px) { 
+
+#global-header{
+	#main-logo {
+		font-size: 30px;
+	}
+
+}
+
+}
 
 // Large desktop
 @media (min-width: 1200px) { }
