@@ -176,12 +176,29 @@ a:active {
 		margin: 30px;
 	}
 }
+//Adspace on the Main Page replacing an article block with an ad.
+.ad-v-block {
+	background: #eee;
+	min-height: 280px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	&:after {
+		content: "Ad space";
+		color: black;
+		font-size: 150%;
+		display: block;
+		margin: 0px;
+		text-align: center;
+		margin-top: 50;
+	}
+}
 
 //Adspace in normal articles placed on the right hand side of the content.
 .ad-v-bar {
 	background: #eee;
 	min-height: 800px;
 }
+
 
 // Utilities
 .v-margin {
