@@ -2,6 +2,7 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
+	<meta name = "viewport" content = "initial-scale = 1.0, minimum-scale = 1.0, maximum-scale=1.0, width = device-width">
 	<title>Dusken.no - Forside</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/bootstrap-responsive.css">
@@ -16,13 +17,11 @@
 
 		<div class="container">
 			<div class="row">
-				
 						
 					<div class="span9">
 						
-						<img  id="main-logo" href="inex.html" src="images/dusken-logo.png" alt="Dusken logo">
+						<a href="index.html"><img  id="main-logo" href="inex.html" src="images/dusken-logo.png" alt="Dusken logo"></a>
 						
-
 						<nav id="main-menu" >
 							<ul>
 								<li><a href="index.html">Nyheter</a></li>
@@ -30,6 +29,13 @@
 								<li><a href="radio.html">Radio</a></li>
 								<li><a href="live.html">Live</a></li>
 							</ul>
+
+							<select id="main-menu-select">
+								<option value="index.html">Nyheter</option>
+								<option value="tv.html">TV</option>
+								<option value="radio.html">Radio</option>
+								<option value="live.html">Live</option>
+							</select>
 						</nav>
 					</div>
 
@@ -43,30 +49,35 @@
 		<nav class="container" id="category-menu">
 			<div class="row">
 				<ul class="span12">
-					<li><i class="icon-fire"></i><a href="">Nyheter</a></li>
-					<li><i class="icon-film"></i><a href="">Kultur</a></li>
-					<li><i class="icon-beaker"></i><a href="">Teknologi</a></li>
-					<li><i class="icon-globe"></i><a href="">Sport</a></li>
-					<li><i class="icon-pencil"></i><a href="reportasje.html">Reportasje</a></li>
-					<li><i class="icon-bullhorn"></i><a href="debatt.html">Debatt</a></li>
+					<li><a href=""><i class="icon-fire"></i>Nyheter</a></li>
+					<li><a href=""><i class="icon-film"></i>Kultur</a></li>
+					<li><a href=""><i class="icon-beaker"></i>Teknologi</a></li>
+					<li><a href=""><i class="icon-globe"></i>Sport</a></li>
+					<li><a href="reportasje.html"><i class="icon-pencil"></i>Reportasje</a></li>
+					<li><a href="debatt.html"><i class="icon-bullhorn"></i>Debatt</a></li>
 				</ul>
+
+				<a href="#category-menu-mobile" id="pick-category">Velg kategori...</a>
 			</div>
+
+
 		</nav>
 
 	</header><!-- end #global-header -->
 	<div class="container">
 		<div class="row"><!-- start row -->
-			<div class="input-append span12">
-			                <input class="span11" id="appendedInputButton" "global-search" size="16" type="text"><button class="btn" type="button">Søk</button>
+			<div class="span3 form-search">
+			           <form><input type="search" name="global-search" id="global-search" placeholder="Søk"></form>
 			</div>
 			
 			<div class="span12">
 				<h1>7 søkeresultat for <em>"Økesrock"</em> :</h1>
 			</div>	
 		</div><!-- end row -->
+		
 		<div class="row" id="sokrad"><!-- start row -->
 			<div class="span2">
-			<img src="/images/articleimage/44.jpg">
+			<img src="/images/articleimage/44.jpg" class="thumbnail">
 			</div>
 			<div class="span8">
 			<h1><a href="/artikkel.html">Eventyrlig økserock</a></h1>
@@ -76,9 +87,10 @@
 			<p id="sokdato">11.04.12</p>
 			</div>
 		</div><!-- end row -->
+		
 		<div class="row" id="sokrad"><!-- start row -->
 			<div class="span2">
-			<img src="/images/articleimage/44.jpg">
+			<img src="/images/articleimage/44.jpg" class="thumbnail">
 			</div>
 			<div class="span8">
 			<h1><a href="/artikkel.html">Eventyrlig økserock</a></h1>
@@ -88,9 +100,10 @@
 			<p id="sokdato">11.04.12</p>
 			</div>
 		</div><!-- end row -->
+		
 		<div class="row" id="sokrad"><!-- start row -->
 			<div class="span2">
-			<img src="/images/articleimage/44.jpg">
+			<img src="/images/articleimage/44.jpg" class="thumbnail">
 			</div>
 			<div class="span8">
 			<h1><a href="/artikkel.html">Eventyrlig økserock</a></h1>
@@ -100,9 +113,10 @@
 			<p id="sokdato">11.04.12</p>
 			</div>
 		</div><!-- end row -->
+		
 		<div class="row" id="sokrad"><!-- start row -->
 			<div class="span2">
-			<img src="/images/articleimage/44.jpg">
+			<img src="/images/articleimage/44.jpg" class="thumbnail">
 			</div>
 			<div class="span8">
 			<h1><a href="/artikkel.html">Eventyrlig økserock</a></h1>
@@ -112,9 +126,10 @@
 			<p id="sokdato">11.04.12</p>
 			</div>
 		</div><!-- end row -->
+		
 		<div class="row" id="sokrad"><!-- start row -->
 			<div class="span2">
-			<img src="/images/articleimage/44.jpg">
+			<img src="/images/articleimage/44.jpg" class="thumbnail">
 			</div>
 			<div class="span8">
 			<h1><a href="/artikkel.html">Eventyrlig økserock</a></h1>
@@ -124,9 +139,10 @@
 			<p id="sokdato">11.04.12</p>
 			</div>
 		</div><!-- end row -->
+		
 		<div class="row" id="sokrad"><!-- start row -->
 			<div class="span2">
-			<img src="/images/articleimage/44.jpg">
+			<img src="/images/articleimage/44.jpg" class="thumbnail">
 			</div>
 			<div class="span8">
 			<h1><a href="/artikkel.html">Eventyrlig økserock</a></h1>
@@ -136,9 +152,10 @@
 			<p id="sokdato">11.04.12</p>
 			</div>
 		</div><!-- end row -->
+		
 		<div class="row" id="sokrad"><!-- start row -->
 			<div class="span2">
-			<img src="/images/articleimage/44.jpg">
+			<img src="/images/articleimage/44.jpg" class="thumbnail">
 			</div>
 			<div class="span8">
 			<h1><a href="/artikkel.html">Eventyrlig økserock</a></h1>
@@ -148,7 +165,60 @@
 			<p id="sokdato">11.04.12</p>
 			</div>
 		</div><!-- end row -->
-
+		
+		<div class="row" id="sokrad"><!-- start row -->
+			<div class="span2">
+			<img src="/images/articleimage/44.jpg" class="thumbnail">
+			</div>
+			<div class="span8">
+			<h1><a href="/artikkel.html">Eventyrlig økserock</a></h1>
+			<p>Et svart eventyr er i ferd med å innta scenen på Blæst denne torsdagen. De norske rock- og metalbandene Djerv og Dunderbeist er det som sørger for den uvinnelige stemningen.</p>
+			</div>
+			<div class="span2">
+			<p id="sokdato">11.04.12</p>
+			</div>
+		</div><!-- end row -->
+		
+		<div class="row" id="sokrad"><!-- start row -->
+			<div class="span2">
+			<img src="/images/articleimage/44.jpg" class="thumbnail">
+			</div>
+			<div class="span8">
+			<h1><a href="/artikkel.html">Eventyrlig økserock</a></h1>
+			<p>Et svart eventyr er i ferd med å innta scenen på Blæst denne torsdagen. De norske rock- og metalbandene Djerv og Dunderbeist er det som sørger for den uvinnelige stemningen.</p>
+			</div>
+			<div class="span2">
+			<p id="sokdato">11.04.12</p>
+			</div>
+		</div><!-- end row -->
+		
+		<div class="row" id="sokrad"><!-- start row -->
+			<div class="span2">
+			<img src="/images/articleimage/44.jpg" class="thumbnail">
+			</div>
+			<div class="span8">
+			<h1><a href="/artikkel.html">Eventyrlig økserock</a></h1>
+			<p>Et svart eventyr er i ferd med å innta scenen på Blæst denne torsdagen. De norske rock- og metalbandene Djerv og Dunderbeist er det som sørger for den uvinnelige stemningen.</p>
+			</div>
+			<div class="span2">
+			<p id="sokdato">11.04.12</p>
+			</div>
+		</div><!-- end row -->
+		<div class="row"><!-- start row -->
+			<div class="pagination span12">
+			  <ul>
+			    <li><a href="#">Forrige</a></li>
+			    <li class="active">
+			      <a href="#">1</a>
+			    </li>
+			    <li><a href="#">2</a></li>
+			    <li><a href="#">3</a></li>
+			    <li><a href="#">4</a></li>
+			    <li><a href="#">Neste</a></li>
+			  </ul>
+			</div>
+		</div><!-- end row -->
+		
 		<footer>
 			<div class="row">
 				<div class="footer span12">
