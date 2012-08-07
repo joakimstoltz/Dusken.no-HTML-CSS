@@ -25,21 +25,36 @@
 #main-logo {
 	display: block;
 	float: left;
+	width: 200px;
+	margin-top: 16px;
 }
 
 #category-menu {
 	background-color: #eee;
-	margin-top: : 3px;
+
 
 	ul {
+<<<<<<< HEAD
 		list-style: none;		
 		li {
 			display: inline-block;
 			margin: 0px 20px;
+=======
+		list-style: none;
+		margin-bottom: 0px;
+
+		li {
+			display: inline-block;
+>>>>>>> Mobil header og footer
 			font-size: 14px;
 
-			&:first-of-type {
-				margin-left: 0;
+			a {
+				padding: 10px 18px;
+				display: inline-block;
+
+				&:hover {
+					background: #ddd;
+				}
 			}
 		}
 
@@ -48,13 +63,21 @@
 			margin-top: 1px;
 		}
 	}
+
+	#pick-category{
+		display: none;
+	}
+}
+
+#category-menu-mobile {
+	display: none;
 }
 
 
 
 #main-menu {
 	float: left;
-	margin-left: 20% + 20px;
+	margin-left: 40px;
 	margin-top: 28px;
 
 	ul {
@@ -74,6 +97,11 @@
 		float: left;
 		color: inherit;
 		padding: 1em 20px;
+	}
+
+	#main-menu-select {
+		width: 100%;
+		display: none;
 	}
 }
 
@@ -123,18 +151,46 @@ a:active {
 //out the page better in the case of shorter news articles on the page coupled with ad-space.
 .print {
 	margin-bottom: 20px;
+
 	.quoteright {
 		float:right;
-
 		max-width: 200px;
 		max-height: 300px;
 		margin: 6px;
 		font-size: 1.5em;
+<<<<<<< HEAD
 	} 
+=======
+	}
+}
+
+p {
+	a {
+		text-decoration: none;
+		color: red;
+	}
+	a:link {
+		color:red;
+		text-decoration: none;
+		}      /* unvisited link */
+	a:visited {
+		color:red;
+		text-decoration: none;
+		}  /* visited link */
+	a:hover {
+		color:red;
+		text-decoration: underline;
+		background-color: rgba(255, 0,0,.05);
+		}  /* mouse over link */
+	a:active {
+		color:red;
+		text-decoration: none;
+	}
+>>>>>>> Mobil header og footer
 }
 
 .quoteacross {
-	font-family: ProximaNovaRgBold;
+	font-family: "ProximaNovaRgBold";
 	font-size:1.5em;
 	text-align: center;
 	margin-top: 1em;
@@ -215,13 +271,15 @@ a:active {
 .footer{
 	background-color: #eee;
 	padding:2em;
+
 	#contact {
 		text-align: right;
 		margin-right:1em;
-			i {
+		
+		i {
 			margin-right: 5px;
 			margin-top: 2px;
-			}
+		}
 	}
 }
 
@@ -244,16 +302,90 @@ a:active {
 // Landscape phone to portrait tablet
 @media (max-width: 768px) { 
 
-.fullwidth {
-	margin-left: -20px;
-	margin-right: -20px;
-}
-
-#global-header{
-	#main-logo {
-
+	.fullwidth {
+		margin-left: -20px;
+		margin-right: -20px;
 	}
-}
+
+	#global-header{
+
+		#main-menu {
+
+			float: none;
+			width: auto;
+			margin-left: 142px;
+
+			#main-menu-select {
+				width: 100%;
+				display: block;
+			}
+
+			ul {
+				display: none;
+			}
+			
+		}
+
+		#global-search {
+			margin-top: 20px;
+			margin-bottom: 28px;
+		}
+
+		#main-logo {
+			width: 100px;
+			margin-top: 2px;
+		}
+	}
+
+	
+
+	#category-menu-mobile {
+		display: block;
+		background-color: #eee;
+		margin-top: 40px;
+
+
+		ul {
+			list-style: none;
+			margin-bottom: 0px;
+
+			li {
+				display: inline-block;
+				float: left;
+				width: 100%;
+				border-bottom: 2px solid #BBB;
+				font-size: 100%;
+
+				a {
+					padding: 10px 18px;
+					display: block;
+
+					&:hover {
+						background: #ddd;
+					}
+				}
+			}
+
+			i {
+				margin-right: 2px;
+				margin-top: 1px;
+			}
+		}
+	}
+
+	#category-menu {
+		ul {
+			display: none;
+		}
+
+		#pick-category{
+			display: block;
+			text-align: center;
+			padding: 10px 30px;
+			background: #BBB;
+		}
+	}
+
 
 }
 
@@ -271,14 +403,13 @@ margin-bottom: 20px;
 // Portrait tablet to landscape and desktop
 @media (min-width: 768px) and (max-width: 980px) { 
 
-#global-header{
-	#main-logo {
-	}
+	#global-header{
 
-	#global-search {
-		
+
+		#main-menu {
+			margin-left: 16px;
+		}
 	}
-}
 
 }
 
